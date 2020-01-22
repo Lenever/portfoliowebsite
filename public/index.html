@@ -46,10 +46,10 @@
           <p>Contact Form</p>
         </div>
 
-        <form action="" method="" class="contactme">
+        <form id="send" action="" method="" class="contactme">
           <div class="form-row">
-            <label for="full-name">Name</label>
-            <input id="full-name" name="full-name" type="text" />
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
           </div>
 
           <div class="form-row">
@@ -59,12 +59,13 @@
               name="email"
               type="email"
               placeholder="johndoe@example.com"
+              required
             />
           </div>
 
           <div class="form-row">
             <label for="subject">Subject</label>
-            <input id="subject" name="subject" type="text" />
+            <input id="subject" name="subject" type="text" required />
           </div>
 
           <div class="form-row">
@@ -79,6 +80,16 @@
       </section>
     </div>
 
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
