@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // Submitting User data from Contact me form
   $("#send").submit(function(event) {
     event.preventDefault();
     if ($("#palname", "#palemail", "#subject").val() !== "") {
