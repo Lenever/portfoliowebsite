@@ -27,18 +27,29 @@ ul {
   list-style: none;
 }
 
+.personalsummary {
+  display: flex;
+  padding: 0 40px;
+}
+
 .about {
   display: flex;
   flex-direction: column;
+  padding: 0 40px;
   /*align-items: center;*/
+}
+
+.about div {
+  text-align: center;
 }
 
 .about section {
   display: flex;
-  padding: 40px 20px;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
   border: 1px solid #d6d9dc;
-  margin: 40px 30px;
-  max-width: 400px;
+  margin: 40px 0;
 }
 
 .contact {
@@ -137,17 +148,32 @@ ul {
 }
 
 @media only screen and (min-width: 700px) {
+  nav,
+  .personalsummary,
+  .about {
+    padding: 0 100px;
+  }
+
   ul {
     justify-content: flex-end;
   }
-
+  /*
   .navitem {
     margin: 20px;
   }
-
-  .about {
+*/
+  .about div {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+
+  .about section {
+    width: 500px;
+    padding: 40px 60px;
+    align-items: initial;
   }
 
   .formheader,
