@@ -7,7 +7,6 @@
 
 .page {
   display: flex;
-  width: 100%;
   flex-direction: column;
 }
 
@@ -29,18 +28,19 @@ ul {
 
 .personalsummary {
   display: flex;
+  flex-direction: column;
   padding: 0 40px;
 }
 
 .about {
   display: flex;
   flex-direction: column;
-  padding: 0 40px;
-  /*align-items: center;*/
+  align-items: center;
 }
 
+.about h1,
 .about div {
-  text-align: center;
+  width: 80%;
 }
 
 .about section {
@@ -147,7 +147,12 @@ ul {
   background-color: #407fc7;
 }
 
-@media only screen and (min-width: 700px) {
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
   nav,
   .personalsummary,
   .about {
@@ -162,6 +167,20 @@ ul {
     margin: 20px;
   }
 */
+  .personalsummary {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .myphoto {
+    width: 300px;
+  }
+
+  .about h1,
+  .about div {
+    width: 100%;
+  }
+
   .about div {
     display: flex;
     flex-direction: row;
