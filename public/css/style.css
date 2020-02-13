@@ -32,6 +32,15 @@ ul {
   width: 80%;
 }
 
+.introduction > div {
+  font-size: 2em;
+}
+
+.introduction > div:first-child {
+  font-size: 3em;
+  margin: 2em auto;
+}
+
 .about section {
   display: flex;
   flex-direction: column;
@@ -152,14 +161,23 @@ ul {
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
+  .introduction {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .introduction > div {
+    width: 100%;
+  }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   nav,
-  .personalsummary,
+  .introduction,
   .about {
-    padding: 0 100px;
+    padding: 0 150px;
   }
 
   ul {
@@ -173,10 +191,18 @@ ul {
   .introduction {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  .myphoto {
-    width: 300px;
+  .introduction > div,
+  .introduction > figure {
+    display: inline-block;
+    flex: 1;
+  }
+
+  .introduction > div:first-child {
+    /*width: 100%;*/
+    flex-basis: 100%;
   }
 
   .about h1,
@@ -188,8 +214,7 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 0 auto;
+    justify-content: space-between;
   }
 
   .about section {
