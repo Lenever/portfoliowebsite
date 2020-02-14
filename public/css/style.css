@@ -41,6 +41,10 @@ ul {
   margin: 2em auto;
 }
 
+.myphoto {
+  border-radius: 50%;
+}
+
 .about section {
   display: flex;
   flex-direction: column;
