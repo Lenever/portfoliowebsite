@@ -5,6 +5,10 @@
   text-decoration: none;
 }
 
+a {
+  text-decoration: initial;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -26,9 +30,14 @@ ul {
   list-style: none;
 }
 
+.navitem {
+  color: #f6f7f8;
+}
+
 .about > p,
 .about div,
-.introduction div {
+.introduction > div {
+  display: inline-block;
   width: 80%;
 }
 
@@ -43,6 +52,7 @@ ul {
 
 .myphoto {
   border-radius: 50%;
+  margin-bottom: 2em;
 }
 
 .about section {
@@ -92,7 +102,7 @@ ul {
 
 .formheader p,
 .about > p {
-  font-size: 30px;
+  font-size: 2.5em;
 }
 
 .contactme {
@@ -187,11 +197,11 @@ ul {
   ul {
     justify-content: flex-end;
   }
-  /*
+
   .navitem {
-    margin: 20px;
+    margin: 2rem;
   }
-*/
+
   .introduction {
     display: flex;
     flex-direction: row;
